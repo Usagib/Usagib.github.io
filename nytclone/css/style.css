@@ -15,9 +15,43 @@ body{
     padding: 0px;
   }
 
+  a{
+    text-decoration: none;
+  }
+
   #container{
     padding-left: 200px ;
     padding-right: 190px ;
+  }
+
+  #container-featured{
+    padding-left: 150px ;
+    padding-right: 150px ;
+  }
+
+  #left-featured{
+    margin-left: 0;
+    width: 75%;
+    background-color: #fff;
+    padding: 10px 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  #right-featured{
+    margin-right: -10%;
+    width: 25%;
+    background-color: #00900085;
+    padding: 10px 10px;
+  }
+
+  #container-featured .column-featured{
+    padding-bottom: 310px ;
+    margin-bottom: -300px;
+    position: relative;
+    float:left;
+    overflow:hidden;
+    margin-top:20px;
   }
 
   #center{
@@ -55,7 +89,7 @@ body{
       height: 30px;
       width: 100%;
       clear:both;
-      background-color: purple;
+      background-color: #51515110;
   }
 
   #header{
@@ -256,4 +290,154 @@ p{
   border: 1px solid #326891;
   text-align: center;
   float:left;
+}
+
+
+.fig-feature  {
+  width: 32.5%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 0px;
+  display: inline-block;
+  height: auto;
+
+}
+
+.img-featured{
+  width: 100%;
+}
+
+.move-right{
+  float: right;
+}
+
+.subtitle{
+  font-size: 0.5rem;
+  line-height: 10px;
+  font-weight: lighter;
+  margin: 5px;
+}
+
+.title-featured{
+  font-size: 1.125rem;
+  line-height: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.item-popular{
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 600;
+  line-height: 1.375;
+}
+
+.list-popular li{
+  border-top: 1px solid #eee;
+  padding: 10px 0px;
+
+}
+
+.list-popular{
+  border-bottom: 1px solid #eee;
+  list-style: none;
+  padding: 0;
+}
+
+.links-sitemap{
+  float: left;
+}
+
+#container-sitemap{
+  background-color: peru;
+  padding-left: 150px;
+  padding-right: 150px;
+  clear: both;
+
+}
+
+.sitemap-column{
+  position: relative;
+  float: left;
+  padding-bottom: 310px;
+  margin-bottom: -300px;
+  overflow: hidden; 
+}
+
+#sitemap-1{
+  margin-left: 0;
+  background-color: peru;
+  opacity: .5;
+  width: 16.6%;
+
+}
+
+#sitemap-2{
+  margin-right: auto;
+  background-color: #cca;
+  width: 16.6%;
+
+}
+
+#sitemap-3{
+  margin-right: auto;
+  background-color: red;
+  width: 16.6%;
+}
+
+
+#sitemap-4{
+  margin-right: auto;
+  background-color: grey;
+  width: 16.6%;
+}
+
+#sitemap-5{
+  margin-right: auto;
+  background-color: orange;
+  width: 16.6%;
+}
+
+#sitemap-6{
+  margin-right: auto;
+  background-color: lime;
+  width: 17%;
+}
+
+.sidemap-links a{
+  display: block;
+}
+
+#sitemap-logo-container{
+  padding-left: 150px;
+  padding-right: 150px;
+  clear: both;
+
+}
+
+.logo-column{
+  position: relative;
+  float: left;
+  overflow: hidden;
+  border-top: 4px double gray;
+}
+
+#logo-1{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sitemap-logo{
+  float:left;
+  height: 60px;
+}
+
+.sitemap-home{
+  font-size: .8rem;
+  font-weight: lighter;
+  color: blue;
+  float: right;
+  margin-top: 40px;
+  margin-right: 10px;
 }
