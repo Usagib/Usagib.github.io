@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:400,500,700&display=swap');
 
+body {
+  overflow-x: hidden;
+}
+
 h2:hover {
   color: #F72210;
 }
@@ -26,6 +30,10 @@ h2:hover {
 
 .footer-row-1-l {
   margin-left: 20px;
+}
+
+.footer-row-1 {
+  height: auto;
 }
 
 .footer-row-1-r {
@@ -630,11 +638,6 @@ h2:hover {
   margin-top: 5px;
 }
 
-.footer-row-1 {
-  height: 100px;
-  margin: auto 5%;
-  margin-top: 20px;
-}
 
 .footer-row-2 {
   height: 70px;
@@ -847,6 +850,10 @@ h2:hover {
 }
 
 @media (min-width: 768px) {
+  .align-right {
+    text-align: right;
+  }
+
   .month-issue {
     height: auto;
   }
