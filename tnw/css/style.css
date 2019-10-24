@@ -3,6 +3,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -18,6 +19,10 @@ header {
   padding-top: 0.5%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hackerman {
+  display: none;
 }
 
 .full-nav-toggle {
@@ -386,7 +391,8 @@ section h1 {
   margin: 0 auto;
   padding-top: 55px;
   height: 50px;
-  width: 800px;
+  width: 100%;
+  text-align: center;
 }
 
 [class*="latest-col"] div {
@@ -544,7 +550,7 @@ section h1 {
 
 [class*='trends-col'] {
   width: 31%;
-  height: 33%;
+  height: auto;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -775,7 +781,7 @@ footer {
 second breakpoint: 760px
 third breakpoint:3..px */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1020px) {
   [class*='social-button'] a {
     margin-top: 3px;
   }
@@ -818,7 +824,7 @@ third breakpoint:3..px */
   }
 
   #main-articles {
-    height: 3000px;
+    height: auto;
   }
 
   [class*="latest-col"] {
@@ -860,7 +866,7 @@ third breakpoint:3..px */
   }
 
   #deals {
-    height: 1000px;
+    height: auto;
   }
 
   [class*='nav-bar'] {
@@ -939,32 +945,18 @@ third breakpoint:3..px */
   }
 }
 
-@media only screen and (max-width: 400px) {
-  [class*='social-button'] a {
-    margin-top: 5px;
+@media only screen and (max-width: 740px) {
+  [class*='trends-col'] {
+    width: 98%;
   }
 
-  .social-icons-wrapper {
-    width: 85%;
-  }
-
-  [class*='social-button'] {
-    width: 25px;
-    height: 25px;
-    font-size: 12px;
-  }
-
-  section article h3 {
-    font-size: 1em;
+  .nav-bar-1 {
+    display: none;
   }
 
   nav {
     margin-top: 0;
     height: 82px;
-  }
-
-  .nav-bar-1 {
-    display: none;
   }
 
   .nav-bar-2 {
@@ -982,10 +974,16 @@ third breakpoint:3..px */
     display: none;
   }
 
-  header {
-    height: 800px;
-    margin: 0;
-    padding-top: 75px;
+  .menu-icon {
+    display: block;
+    color: gray;
+  }
+
+  .logo-fix {
+    position: absolute;
+    top: 16px;
+    left: 25px;
+    width: 66px;
   }
 
   .header-wrapper {
@@ -1001,6 +999,27 @@ third breakpoint:3..px */
     float: left;
     margin-left: 0;
     margin-top: 2%;
+  }
+
+  [class*="overlay-title"] {
+    font-size: 1.5em;
+    line-height: 30px;
+  }
+
+  .header-title-1 {
+    margin-top: 100px;
+  }
+
+  .header-title-2 {
+    margin-top: 0;
+  }
+
+  .overlay-subtitle {
+    display: none;
+  }
+
+  header {
+    height: 600px;
   }
 
   [class*='latest-col'],
@@ -1033,7 +1052,6 @@ third breakpoint:3..px */
   [class*='funding-col'] {
     width: 100%;
     height: 250px;
-    margin-top: 10px;
     margin-left: 25px;
     margin-right: 25px;
   }
@@ -1069,6 +1087,30 @@ third breakpoint:3..px */
   #deals {
     height: 950px;
   }
+}
+
+@media only screen and (max-width: 420px) {
+  .overlay-title-1 {
+    font-size: 1em;
+  }
+
+  [class*='social-button'] a {
+    margin-top: 5px;
+  }
+
+  .social-icons-wrapper {
+    width: 85%;
+  }
+
+  [class*='social-button'] {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  section article h3 {
+    font-size: 1em;
+  }
 
   .footer-up {
     height: 88%;
@@ -1091,32 +1133,5 @@ third breakpoint:3..px */
 
   #main-articles {
     height: 5700px;
-  }
-
-  .menu-icon {
-    display: block;
-    color: gray;
-  }
-
-  .search-icon {
-    right: 30px;
-    top: 16px;
-    color: gray;
-  }
-
-  [class*="overlay-title"] {
-    font-size: 1.5em;
-    line-height: 30px;
-  }
-
-  .header-title-1 {
-    margin-top: 125px;
-  }
-
-  .logo-fix {
-    position: absolute;
-    top: 16px;
-    left: 25px;
-    width: 66px;
   }
 }
