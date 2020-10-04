@@ -9,6 +9,7 @@ import {
 import Navigation from './Navigation';
 import Home from './Home';
 import Me from './Me';
+import Projects from './Projects';
 
 const App = props => {
   const { cookies } = props;
@@ -20,6 +21,7 @@ const App = props => {
           <Route path="/">
             <Home />
             <Me />
+            <Projects />
           </Route>
         </Switch>
       </div>

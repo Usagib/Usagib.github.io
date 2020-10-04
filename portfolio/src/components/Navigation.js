@@ -68,13 +68,13 @@ class Navigation extends React.Component {
           </div>
           <ul className="nav flex-column mb-0 mt-5 ml-5">
             <li className="nav-item">
-              <a href="/" className="nav-link text-white">
+              <a href="#home" className="nav-link text-white">
                 HOME
               </a>
             </li>
             <li className="nav-item">
-              <a href="/services" className="nav-link">
-                PROJECTS
+              <a href="#about" className="nav-link">
+                ME
               </a>
             </li>
             <li className="nav-item">
