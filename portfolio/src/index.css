@@ -187,6 +187,41 @@ body {
   font-size: 1.5rem;
 }
 
+.skill-text {
+  font-family: 'EvolveSansMediumEVO', sans-serif;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+}
+
+.skill-title {
+  font-family: 'EvolveSansMediumEVO', sans-serif;
+  color: black;
+  font-size: 4rem;
+}
+
+.sm-project-title {
+  font-family: 'EvolveSansMediumEVO', sans-serif;
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.sm-project-subtitle {
+  font-family: 'EvolveSansMedium', sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+
+.sm-tech-text {
+  font-family: 'EvolveSansMediumEVO', sans-serif;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.2rem;
+}
+
 .rainbow-text {
   background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
   color: transparent;
@@ -205,6 +240,25 @@ body {
 .btn-next:hover {
   background-color: yellow;
   font-size: 2rem;
+}
+
+.highlight-text {
+  color: purple;
+  transition: 0.5s;
+}
+
+.highlight-text:hover {
+  color: yellow;
+}
+
+.highlight-text-2 {
+  color: yellow;
+  transition: 0.5s;
+}
+
+.highlight-text-2:hover {
+  color: purple;
+  transition: 0.5s;
 }
 
 .btn-live {

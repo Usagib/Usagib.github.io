@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { faArrowAltCircleLeft, faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -50,7 +51,9 @@ class Navigation extends React.Component {
             backgroundColor: '#ffffff00',
           }}
         >
+        <Link to='/'>
           <img className="img-fluid fadein" src="logo.png" />
+        </Link>
           <br />
           <img className="img-fluid fadein fadein-first mt-3" src="logogit.png" />
           <br />
@@ -68,18 +71,23 @@ class Navigation extends React.Component {
           </div>
           <ul className="nav flex-column mb-0 mt-5 ml-5">
             <li className="nav-item">
-              <a href="#home" className="nav-link text-white">
+              <a href="/" className="nav-link text-white">
                 HOME
               </a>
             </li>
             <li className="nav-item">
-              <a href="#about" className="nav-link">
+              <a href="/me" className="nav-link">
                 ME
               </a>
             </li>
             <li className="nav-item">
-              <a href="/catalog" className="nav-link">
-                ME
+              <a href="/projects" className="nav-link">
+                PORTFOLIO
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="/skills" className="nav-link">
+                SKILLS
               </a>
             </li>
           </ul>
