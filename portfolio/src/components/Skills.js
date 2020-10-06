@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom';
 
 const Skills = () => (
   <header class="masthead" id="home">
-    <div class="container-fluid d-flex h-100 align-items-center">
+    <div class="container mt-5">
+      <span className="project-title">My Skills</span>
+    </div>
+    <div class="container-fluid d-flex align-items-center mt-3">
         <Carousel fade="true">
           <Carousel.Item>
               <div className="row" style={{
@@ -15,20 +18,17 @@ const Skills = () => (
                 height: 'auto',
                 width: '100vw',
               }}>
-                <div className="col-lg-8">
+                <div className="col-lg-6">
                   <img class="img-fluid fadein" src="service2.png" alt="" />
                 </div>
-                <div className="col-lg-4 text-left">
+                <div className="col-lg-6 text-left skills-text">
                   <span class="skill-title mt-5">
                     FRONTEND
                   </span>
                   <br />
-                  <span class="skill-text mt-5">
+                  <span class="skill-text mt-5 pr-5">
                     HTML5 CSS3 JavaScript React Redux Bootstrap UI/UX Design Wireframing
                   </span>
-                  <Link to="/projects">
-                    <button className="btn btn-next">Visit my Portfolio</button>
-                  </Link>
                 </div>
               </div>
           </Carousel.Item>
@@ -41,20 +41,17 @@ const Skills = () => (
                 height: 'auto',
                 width: '100vw',
               }}>
-                <div className="col-lg-8">
+                <div className="col-lg-6">
                   <img class="img-fluid fadein" src="service3.png" alt="" />
                 </div>
-                <div className="col-lg-4 text-left">
+                <div className="col-lg-6 text-left skills-text">
                   <span class="skill-title mt-5">
                     BACKEND
                   </span>
                   <br />
-                  <span class="skill-text mt-5">
+                  <span class="skill-text mt-5 pr-5">
                     Ruby Rails PostgreSQL Database design API development
                   </span>
-                  <Link to="/projects">
-                    <button className="btn btn-next">Visit my Portfolio</button>
-                  </Link>
                 </div>
               </div>
           </Carousel.Item>
@@ -67,10 +64,10 @@ const Skills = () => (
                 height: 'auto',
                 width: '100vw',
               }}>
-                <div className="col-lg-8">
+                <div className="col-lg-6">
                   <img class="img-fluid fadein" src="service4.png" alt="" />
                 </div>
-                <div className="col-lg-4 pr-5 text-left">
+                <div className="col-lg-6 skills-text pr-5 text-left">
                   <span class="skill-title mt-5">
                     DESIGN
                   </span>
@@ -78,13 +75,21 @@ const Skills = () => (
                   <span class="skill-text mt-5">
                     Illustrator Photoshop Inkscape Branding Sketching
                   </span>
-                  <Link to="/projects">
-                    <button className="btn btn-next">Visit my Portfolio</button>
-                  </Link>
                 </div>
               </div>
           </Carousel.Item>
         </Carousel>
+    </div>
+    <div className="container align-items-center mt-3">
+      <Link to="/projects">
+        <button className="btn btn-next mx-5 fadein fadein-first">Visit my Portfolio</button>
+      </Link>
+      <a href="https://docs.google.com/document/d/1wDLnDSzeLd2c6ecFKbzIU7bDV_pzq7mbRcmEACvWQLY/edit?usp=sharing" target="_blank">
+        <button className="btn btn-next mx-5 fadein fadein-second">Download my Resume</button>
+      </a>
+      <Link to="/me">
+        <button className="btn btn-next mx-5 fadein fadein-third">Get to know Me</button>
+      </Link>
     </div>
   </header>
 );

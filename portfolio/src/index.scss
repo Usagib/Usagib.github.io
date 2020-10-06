@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-
-@font-face {
-  font-family: 'itcBauhausBold';
-  src: url('./assets/fonts/itcBauhausBold.otf');
-}
-
 @font-face {
   font-family: 'EvolveSansMediumEVO';
   src: url('./assets/fonts/EvolveSansMediumEVO.otf');
@@ -16,9 +9,23 @@
 }
 
 body {
-  background: #000;
+	background: linear-gradient(-45deg, #31154b, #000000);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .projects-section {
@@ -40,11 +47,11 @@ body {
 }
 
 .menu-bars:hover {
-  color: #facf23ff;
+  color: #facf23;
 }
 
 .menu-bars-inner {
-  color: #facf23ff;
+  color: #facf23;
   transition: 1s;
 }
 
@@ -79,67 +86,12 @@ body {
   background: #97bfaa !important;
 }
 
-.catalog-title {
-  margin-top: 10%;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #333;
-  font-size: 3rem;
-}
-
-.catalog-subtitle {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
 .carousel-caption {
   height: 100%;
 }
 
 .service-img {
   margin-left: 20%;
-}
-
-.configure-btn {
-  border-radius: 50px;
-  font-size: 1rem;
-  background-color: #97bf0f;
-  font-family: 'Poppins', sans-serif;
-}
-
-.cancel-btn {
-  border-radius: 50px;
-  font-size: 0.8rem;
-  background-color: #ba262b;
-  font-family: 'Poppins', sans-serif;
-}
-
-.carousel-title {
-  margin-top: 45%;
-  margin-bottom: 5%;
-  font-family: 'itcBauhausBold', sans-serif;
-  font-size: 2.7rem;
-  letter-spacing: 10px;
-}
-
-.home-title {
-  margin-top: 40%;
-  font-family: 'itcBauhausBold', sans-serif;
-  font-size: 5rem;
-  letter-spacing: 10px;
-  background-color: black;
-}
-
-.menu-indicator {
-  font-family: 'itcBauhausBold', sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: white;
-  background-color: black;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 .nav-link {
@@ -151,7 +103,7 @@ body {
 
 .nav-link:hover {
   font-family: 'EvolveSansMedium', sans-serif;
-  color: yellow !important;
+  color: #facf23 !important;
 }
 
 .home-text {
@@ -179,10 +131,15 @@ body {
   color: white;
 }
 
+.skills-text {
+  background: linear-gradient(128deg, rgba(255,255,255,1) 0%, rgba(212,212,212,1) 100%);
+  opacity: 0.7;
+}
+
 .tech-text {
   font-family: 'EvolveSansMediumEVO', sans-serif;
   letter-spacing: 1px;
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, #facf23, orange, red);   -webkit-background-clip: text;
   color: transparent;
   font-size: 1.5rem;
 }
@@ -190,7 +147,7 @@ body {
 .skill-text {
   font-family: 'EvolveSansMediumEVO', sans-serif;
   letter-spacing: 1px;
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, #facf23, orange, red);   -webkit-background-clip: text;
   color: transparent;
   font-size: 3rem;
 }
@@ -217,13 +174,13 @@ body {
 .sm-tech-text {
   font-family: 'EvolveSansMediumEVO', sans-serif;
   letter-spacing: 1px;
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, #facf23, orange, red);   -webkit-background-clip: text;
   color: transparent;
   font-size: 1.2rem;
 }
 
 .rainbow-text {
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, #facf23, orange, red);   -webkit-background-clip: text;
   color: transparent;
   opacity: 0.8;
 }
@@ -238,26 +195,26 @@ body {
 }
 
 .btn-next:hover {
-  background-color: yellow;
+  background-color: #facf23;
   font-size: 2rem;
 }
 
 .highlight-text {
-  color: purple;
+  color: #7e56f1;
   transition: 0.5s;
 }
 
 .highlight-text:hover {
-  color: yellow;
+  color: #facf23;
 }
 
 .highlight-text-2 {
-  color: yellow;
+  color: #facf23;
   transition: 0.5s;
 }
 
 .highlight-text-2:hover {
-  color: purple;
+  color: #7e56f1;
   transition: 0.5s;
 }
 
@@ -271,12 +228,25 @@ body {
 }
 
 .btn-live:hover {
-  background-color: teal;
+  background-color: darkgreen;
   font-size: 1.1rem;
   color: white;
 }
 
+.btn-code {
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  transition: 0.5s;
+  font-family: 'EvolveSansMediumEVO', sans-serif;
+  font-size: 1rem;
+}
 
+.btn-code:hover {
+  background-color: black;
+  font-size: 1.1rem;
+  color: white;
+}
 
 .project-text {
   font-family: 'EvolveSansMedium', sans-serif;
@@ -288,17 +258,6 @@ body {
   font-family: 'EvolveSansMedium', sans-serif;
   font-size: 1.5rem;
   color: white;
-}
-
-.log-title {
-  font-family: 'itcBauhausBold', sans-serif;
-  font-size: 2.7rem;
-  letter-spacing: 10px;
-}
-
-.log-small {
-  font-family: 'Poppins', sans-serif;
-  color: black;
 }
 
 a {
@@ -332,23 +291,6 @@ a:hover {
   width: calc(100% - 17rem);
   margin-left: 17rem;
   transition: all 0.4s;
-}
-
-.profile-title {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.profile-subtitle {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-}
-
-.profile-text {
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.7rem;
-  font-weight: lighter;
 }
 
 #sidebar.active {

@@ -55,11 +55,17 @@ class Navigation extends React.Component {
           <img className="img-fluid fadein" src="logo.png" />
         </Link>
           <br />
-          <img className="img-fluid fadein fadein-first mt-3" src="logogit.png" />
+          <a href="https://github.com/usagib" target="_blank">
+            <img className="img-fluid fadein fadein-first mt-3" src="logogit.png" />
+          </a>
           <br />
-          <img className="img-fluid fadein mt-3 fadein-second" src="logolin.png" />
-            <br />
+          <a href="https://www.linkedin.com/in/usagib/" target="_blank">
+            <img className="img-fluid fadein mt-3 fadein-second" src="logolin.png" />
+          </a>
+          <br />
+          <a href="https://twitter.com/UsagiBonilla" target="_blank">
             <img className="img-fluid fadein mt-3 fadein-third" src="logotwi.png" />
+          </a>
         </div>
         <div className={`vertical-nav toggleSidebar ${toggleSidebar}`} id="sidebar">
           <div className="pt-4 px-3 ml-5 mt-1">
